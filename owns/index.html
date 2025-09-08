@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Slideshow</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      div {
+        width: 550px;
+        margin: 0 auto;
+      }
+    </style>
+    <!-- jQuery 라이브러리 연결 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- gallery 플러그인 연결 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.03/jquery.cycle.all.min.js"></script>
+
+    <!-- 제이쿼리 -->
+    <script language="javascript" type="text/javascript">
+      $(function () {
+        $("#gallery").cycle({
+          fx: 'fade',
+          timeout: 4000,
+          width: 400,
+          height: 300
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1>image slideshow</h1>
+    <div id="gallery">
+      <!-- 10개의 이미지를 ul li a태그로 넣기 -->
+      <ul>
+        <li><a href="#"><img src="https://picsum.photos/400/300?random=1" alt="Image 1"></a></li>
+        <li><a href="#"><img src="https://picsum.photos/400/300?random=2" alt="Image 2"></a></li>
+        <li><a href="#"><img src="https://picsum.photos/400/300?random=3" alt="Image 3"></a></li>
+        <li><a href="#"><img src="https://picsum.photos/400/300?random=4" alt="Image 4"></a></li>
+        <li><a href="#"><img src="https://picsum.photos/400/300?random=5" alt="Image 5"></a></li>
+        <li><a href="#"><img src="https://picsum.photos/400/300?random=6" alt="Image 6"></a></li>
+        <li><a href="#"><img src="https://picsum.photos/400/300?random=7" alt="Image 7"></a></li>
+        <li><a href="#"><img src="https://picsum.photos/400/300?random=8" alt="Image 8"></a></li>
+        <li><a href="#"><img src="https://picsum.photos/400/300?random=9" alt="Image 9"></a></li>
+        <li><a href="#"><img src="https://picsum.photos/400/300?random=10" alt="Image 10"></a></li>
+      </ul>
+    </div>
+  </body>
+</html>
